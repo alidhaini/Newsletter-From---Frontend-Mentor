@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/form-card.css">
+  <link rel="stylesheet" href="./styles/success.css">
+</head>
+<body>
+      <div class="subscription-card">
+        <div class="heading-img-wrapper">
+          <!-- <img class="heading-desktop-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up"> -->
+          <img class="heading-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up">
+        </div>
+        <div class="form-content">
+          <h1 class="heading-title">Stay updated!</h1>
+
+          <p class="description">Join 60,000+ product managers recieving monthly updates on:</p>
+
+          <ul class="updates_list">
+            <li>
+              <svg class="list_icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+               <p>Product discovery and building what matters</p>
+            </li>
+            <li>
+              <svg class="list_icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+              <p>Measuring to ensure updates are success</p> 
+            </li>
+            <li>
+              <svg class="list_icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+              <p>And much more!</p>
+            </li>
+          </ul>
+
+          <form id="form" action="">
+            <div class="form-item">
+                <label for="email">
+                  <p class="input-label">Email Address</p>
+                  <p id="invalid-email" class="invalid-email">Invalid Email!</p>
+                </label>
+                <input class="email-input" type="email" id="email" name="email" placeholder="email@company.com">
+            </div>
+            <div class="form-item">
+                <button class="submit" type="submit">Subscribe to monthly newsletter</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div style="display: none;"  class="success-card">
+          <div>
+            <img class="success-icon" src="./assets/images/icon-success.svg" alt="">
+          </div>
+
+          <h1 class="success-header-title">Thanks for subscribing!</h1>
+
+          <p class="success-description">A confirmation email has been sent to <strong class="success-email-input"></strong>. Please open it and click the button inside to confirm your subscription.</p>
+
+          <button class="success-btn">Dismiss message</button>
+      </div>
+
+      <script src="./source/index.js"></script>
+</body>
+</html>

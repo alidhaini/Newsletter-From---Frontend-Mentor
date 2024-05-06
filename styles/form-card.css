@@ -1,0 +1,309 @@
+.subscription-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.heading-img{
+    width: 100%;
+}
+
+.heading-title{
+    font-weight: 700;
+    font-size: var(--size-2xl);
+    color: var(--clr-charcoalGrey);
+
+}
+
+.form-content{
+    margin-left: var(--size-xl);
+    margin-right: var(--size-xl);
+    position: relative;
+}
+
+.description{
+    font-size: var(--size-sm);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--clr-darkSlateGrey);
+    font-weight: 400;
+}
+
+.updates_list{
+    list-style-type: none;
+    /* list-style-type: '\1f44d'; */
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.updates_list li{
+    padding-left: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items:start;
+    gap: 1rem;
+    font-size: var(--size-sm);
+}
+
+.list_icon{
+    max-width: var(--size-sm);
+    min-width: var(--size-sm);
+}
+.form-item label{
+    display: flex;
+    justify-content: space-between;
+}
+.input-label{
+    font-weight: 700;
+    color: var(--clr-darkSlateGrey);
+    display: block;
+    font-size: var(--size-xs);
+    margin-bottom: 0.5rem;
+}
+
+.email-input{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--clr-grey);
+    font-size: var(--size-sm);
+    padding: 0.8rem 1rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.email-input:focus{
+    border-color: var(--clr-darkSlateGrey);
+}
+
+.email-input::placeholder{
+    color: var(--clr-grey);
+}
+
+.invalid-input{
+    border-color: var(--clr-tomato);
+    background-color: hsla(4, 100%, 67%,0.3);
+}
+
+.invalid-input::placeholder{
+    color: var(--clr-tomato);
+}
+
+.invalid-email{
+    display: none;
+    color: var(--clr-tomato);
+    font-weight: 700;
+    font-size: var(--size-xs);
+}
+
+.submit{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--clr-darkSlateGrey);
+    color: var(--clr-white);
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-size: var(--size-sm);
+}
+
+.submit:hover{
+    background: linear-gradient(127deg, rgba(255,63,124,1) 40%, rgb(255,154,34,1) 70%);
+}
+
+
+@media (min-width: 375px) {
+    .subscription-card{
+        gap: 1.5rem;
+    }
+    
+    .heading-title{
+        font-size: var(--size-4xl);
+    }
+    
+    .form-content{
+        margin-left: var(--size-2xl);
+        margin-right: var(--size-2xl);
+    }
+    
+    .description{
+        font-size: var(--size-base);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .updates_list{
+        margin-bottom: 2rem;
+    }
+    
+    .updates_list li{
+        margin-bottom: 1rem;
+        gap: 1rem;
+        font-size: var(--size-base);
+    }
+
+    .list_icon{
+        max-width: var(--size-xl);
+        min-width: var(--size-xl);
+    }
+    
+    .input-label{
+        font-size: var(--size-sm);
+        margin-bottom: 0.5rem;
+    }
+    
+    .email-input{
+        font-size: var(--size-base);
+        padding: 0.8rem 1rem 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .submit{
+        padding: 1rem 1em;
+        margin-top: 1rem;
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 1024px) and (max-height:900px) {
+    body{
+        background-color: var(--clr-darkSlateGrey);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100vh;
+    }
+    .subscription-card{
+        flex-direction: row-reverse;
+        gap: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--clr-white);
+        border-radius: 30px;
+    }
+    .heading-img{
+        content: url('../assets/images/illustration-sign-up-desktop.svg');
+    }
+    .heading-img-wrapper{
+        text-align: right;
+    }
+    .heading-title{
+        font-size: var(--size-4xl);
+    }
+
+    .form-content{
+        margin-left: var(--size-2xl);
+        margin-right: var(--size-2xl);
+    }
+
+    .description{
+        font-size: var(--size-base);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .updates_list{
+        margin-bottom: 2rem;
+    }
+    
+    .updates_list li{
+        margin-bottom: 1rem;
+        gap: 1rem;
+        font-size: var(--size-base);
+    }
+
+    .list_icon{
+        max-width: var(--size-xl);
+        min-width: var(--size-xl);
+    }
+    
+    .input-label{
+        font-size: var(--size-sm);
+        margin-bottom: 0.5rem;
+    }
+    
+    .email-input{
+        font-size: var(--size-base);
+        font-size: 1rem;
+    }
+    
+    .submit{
+        padding: 1rem 1em;
+        margin-top: 1rem;
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 1280px) {
+    body{
+        background-color: var(--clr-darkSlateGrey);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100vh;
+    }
+    .subscription-card{
+        flex-direction: row-reverse;
+        gap: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--clr-white);
+        border-radius: 30px;
+    }
+    .heading-img{
+        content: url('../assets/images/illustration-sign-up-desktop.svg');
+    }
+    .heading-img-wrapper{
+        text-align: right;
+    }
+    .heading-title{
+        font-size: var(--size-4xl);
+    }
+
+    .form-content{
+        margin-left: var(--size-2xl);
+        margin-right: var(--size-2xl);
+    }
+
+    .description{
+        font-size: var(--size-base);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .updates_list{
+        margin-bottom: 2rem;
+    }
+    
+    .updates_list li{
+        margin-bottom: 1rem;
+        gap: 1rem;
+        font-size: var(--size-base);
+    }
+
+    .list_icon{
+        max-width: var(--size-xl);
+        min-width: var(--size-xl);
+    }
+    
+    .input-label{
+        font-size: var(--size-sm);
+        margin-bottom: 0.5rem;
+    }
+    
+    .email-input{
+        font-size: var(--size-base);
+        font-size: 1rem;
+    }
+    
+    .submit{
+        padding: 1rem 1em;
+        margin-top: 1rem;
+        font-size: var(--size-base);
+    }
+}
