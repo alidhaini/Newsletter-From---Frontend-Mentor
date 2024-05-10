@@ -2,27 +2,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 8rem 3rem 3rem 3rem;
     height: 100vh;
     gap: 2rem;
 }
 
+.success-icon{
+    width: 5rem;
+}
+
 .success-header-title{
     font-weight: 700;
+    font-size: var(--size-5xl);
 }
 
-.success-icon{
-    width: 3rem;
-}
 
+.success-description{
+    font-size: var(--size-xl);
+}
 .success-btn{
-    padding: 1em 0.5em;
+    padding: 1rem;
     background-color: var(--clr-darkSlateGrey);
     color: var(--clr-white);
+    font-size: var(--size-xl);
     border-radius: 6px;
     outline: none;
     margin-top: auto;
+    font-weight: 4  00;
 }
+
 
 .success-btn:hover{
     background: linear-gradient(127deg, rgba(255,63,124,1) 40%, rgb(255,154,34,1) 70%);
@@ -30,11 +38,28 @@
 
 @media (min-width: 1024px) {
     .success-card{
-        width: 30%;
+        width: 28rem;
         height: auto;
         background-color: var(--clr-white);
-        padding: 1.5rem 3rem;
+        padding: 3rem;
         border-radius: 20px;
+        gap: 2rem;
+    }
+    .success-header-title{
+        font-size: var(--size-5xl);
+    }
+    
+    .success-icon{
+        width: 4rem;
+    }
+    
+    .success-btn{
+        padding: 1em 0.5em;
+        background-color: var(--clr-darkSlateGrey);
+        color: var(--clr-white);
+        border-radius: 6px;
+        outline: none;
+        margin-top: auto;
     }
     
 }

@@ -29,15 +29,11 @@
     margin: 0;
     padding: 0;
     line-height: calc(1em + 0.5rem);
-    /* 1em takes the size of the font */
-    /* 0.5 rem = 8px */
-    /* 1 rem = 16px */
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-    /* this make scrolling as a transition */
 }
 
 body {
@@ -66,6 +62,7 @@ button {
     background: none;
     cursor: pointer;
     color: inherit;
+    font-family: inherit;
 }
 
 a{
